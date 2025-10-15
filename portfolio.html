@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saravanan L — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:'Poppins',sans-serif;
+    scroll-behavior: smooth;
+    background: #f0f4f8;
+    color: #1f2937;
+  }
+  header{
+    position: fixed; top:0; left:0; width:100%;
+    background:#1d4ed8; color:white; padding:15px 0;
+    text-align:center; z-index:1000;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  }
+  header nav a{
+    color:white; margin:0 15px; text-decoration:none; font-weight:600; transition:0.3s;
+  }
+  header nav a:hover{color:#a5b4fc;}
+  section{
+    min-height:100vh;
+    padding:120px 20px 60px;
+    display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
+    position:relative;
+  }
+  .container{
+    max-width:900px; width:100%;
+    background:white; border-radius:16px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.1);
+    padding:40px 40px; margin-top:20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .container:hover{transform:scale(1.02); box-shadow:0 15px 45px rgba(0,0,0,0.15);}
+  h1{font-size:48px;font-weight:700;margin-bottom:10px;}
+  h2{
+    border-left:5px solid #2563eb;
+    padding-left:10px;font-size:24px;color:#111827;margin-bottom:16px;
+  }
+  p, li{color:#374151;font-size:16px;margin-bottom:10px;}
+  ul{padding-left:20px;}
+  .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px;}
+  .pill{background:#e0e7ff;color:#1e3a8a;padding:8px 14px;border-radius:50px;font-size:14px;font-weight:500;transition:all 0.3s ease;}
+  .pill:hover{background:#2563eb;color:white;transform:translateY(-3px);}
+  footer{text-align:center;color:#6b7280;padding:30px;font-size:14px;}
+  .hero-img{
+    width:150px; height:150px; border-radius:50%; border:4px solid #2563eb;
+    object-fit:cover; margin-bottom:20px; box-shadow:0 10px 20px rgba(0,0,0,0.2);
+  }
+  .projects-grid{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;
+  }
+  .project-card{
+    background:#f3f4f6; border-radius:12px; overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .project-card:hover{transform:translateY(-5px);box-shadow:0 10px 25px rgba(0,0,0,0.15);}
+  .project-card img{width:100%; height:150px; object-fit:cover;}
+  .project-card .card-content{padding:15px;}
+  .section-bg{position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1;opacity:0.1;}
+  .section-bg.circle{border-radius:50%; background:radial-gradient(circle,#2563eb,#3b82f6);}
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#strengths">Strengths</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- Home Section -->
+<section id="home">
+  <div class="section-bg circle" style="width:400px;height:400px;top:-50px;left:-50px;"></div>
+  <div class="container" style="text-align:center;">
+    <img src="D:\documents\sarav.jpg" alt="Saravanan L" class="hero-img">
+    <h1>SARAVANAN L</h1>
+    <p>Aspiring UI/UX Designer | AI & ML Enthusiast</p>
+    <p>Erode, India • +91 90426 56236 • <a href="mailto:saravananloganathan03@gmail.com">saravananloganathan03@gmail.com</a></p>
+    <p><a href="https://linkedin.com/in/saravanansarav">LinkedIn</a> • <a href="https://github.com/saravsarav">GitHub</a></p>
+    <h2>Career Objective</h2>
+    <p>To work in a challenging environment that provides an opportunity to improve my skills and knowledge to grow along with the organization’s objective.</p>
+  </div>
+</section>
+
+<!-- Education Section -->
+<section id="education">
+  <div class="section-bg circle" style="width:300px;height:300px;bottom:-50px;right:-50px;"></div>
+  <div class="container">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Sc. Artificial Intelligence and Machine Learning</strong> — KPR College of Arts Science and Research, Coimbatore (2023 – Present)</li>
+      <li><strong>Higher Secondary Education</strong> — Bharathi Matric Hr. Sec. School, Erode (2022 – 2023)</li>
+      <li><strong>SSLC</strong> — Bharathi Matric Hr. Sec. School, Erode (2020 – 2021)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+  <div class="section-bg circle" style="width:350px;height:350px;top:-50px;right:-50px;"></div>
+  <div class="container">
+    <h2>Technical Skills</h2>
+    <p>I have a strong foundational knowledge in programming, databases, and web development. My skills allow me to build functional, visually appealing, and efficient applications while following best practices in coding and design.</p>
+    
+    <div class="skills">
+      <span class="pill">C++</span>
+      <span class="pill">Java</span>
+      <span class="pill">MySQL</span>
+      <span class="pill">HTML & CSS</span>
+    </div>
+
+    <h2>Certifications</h2>
+    <p>In addition to practical experience, I have earned certifications that demonstrate my dedication to continuous learning and proficiency in these skills.</p>
+    <div class="skills">
+      <span class="pill">Java (HackerRank)</span>
+      <span class="pill">Web Development (IBM)</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects">
+  <div class="section-bg circle" style="width:400px;height:400px;bottom:-100px;left:-100px;"></div>
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="project1.jpg" alt="Website Vulnerability Scanner">
+        <div class="card-content">
+          <h3>Website Vulnerability Scanner</h3>
+          <p>ML-based scanner that classifies vulnerabilities using the BERT model.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="project2.jpg" alt="Crayond Clone">
+        <div class="card-content">
+          <h3>Crayon’d Website Clone</h3>
+          <p>Recreated Crayon’d homepage using HTML, CSS & JS to enhance front-end skills.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Strengths Section -->
+<section id="strengths">
+  <div class="section-bg circle" style="width:350px;height:350px;top:-50px;left:-50px;"></div>
+  <div class="container">
+    <h2>Strengths</h2>
+    <ul>
+      <li>Quick learner with logical thinking</li>
+      <li>Adaptable to new technologies</li>
+      <li>Good communication skills</li>
+      <li>Team player</li>
+    </ul>
+
+    <h2>Personal Details</h2>
+    <ul>
+      <li><strong>Date of Birth:</strong> 26/04/2006</li>
+      <li><strong>Gender:</strong> Male</li>
+      <li><strong>Languages Known:</strong> Tamil, English</li>
+      <li><strong>Address:</strong> Erode, Tamil Nadu, India</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <div class="container" style="text-align:center;">
+    <h2>Contact</h2>
+    <p><i class="fas fa-map-marker-alt"></i> Erode, India</p>
+    <p><i class="fas fa-phone"></i> +91 90426 56236</p>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:saravananloganathan03@gmail.com">saravananloganathan03@gmail.com</a></p>
+    <p>
+      <i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/saravanansarav">LinkedIn</a> • 
+      <i class="fab fa-github"></i> <a href="https://github.com/saravsarav">GitHub</a>
+    </p>
+    
+    <!-- Contact Me Button -->
+    <a href="mailto:saravananloganathan03@gmail.com" 
+       style="display:inline-block;margin-top:20px;padding:12px 25px;background:#2563eb;color:white;border-radius:8px;text-decoration:none;font-weight:600;transition:0.3s;"
+       onmouseover="this.style.background='#1e40af'" onmouseout="this.style.background='#2563eb'">
+       Contact Me
+    </a>
+  </div>
+</section>
+
+<!-- Font Awesome CDN for icons (add in <head>) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+<footer>
+  © 2025 Saravanan L — Portfolio
+</footer>
+
+</body>
+</html>
